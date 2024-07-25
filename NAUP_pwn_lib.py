@@ -41,21 +41,3 @@ def shellcode_gen(asm_list):
 def split_nc(nc_str):
     nc_str=nc_str.split(" ")
     return [nc_str[1],nc_str[2]]
-
-class ROP_gadget:
-    def __init__(self):
-        self.ROPvar = {
-            'pop_rax_ret': 0x0,
-            'pop_rdi_ret': 0x0,
-            'pop_rsi_ret': 0x0,
-            'pop_rdx_ret': 0x0,
-            'leave_ret': 0x0,
-            'syscall': 0x0
-        }
-        self.STACKvar = {
-            'rax_var': 0x0,
-            'rdi_var': 0x0,
-            'rsi_var': 0,
-            'rdx_var': 0,
-            'shell': b'/bin/sh\x00'
-        }
