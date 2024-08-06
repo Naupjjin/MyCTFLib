@@ -20,6 +20,14 @@ chmod +x copyPWNLIB.sh
 cd ../
 ```
 
+## use CryptoLib
+```
+cd MyCTFLib
+chmod +x copyCRYPTOLIB.sh
+./copyCRYPTOLIB.sh
+cd ../
+```
+
 ## lib intro
 ```
 MyCTFLib/
