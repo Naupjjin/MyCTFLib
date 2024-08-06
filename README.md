@@ -15,7 +15,6 @@ chmod +x init.sh
 ## use PwnLib
 ```
 cd MyCTFLib
-chmod +x copyPWNLIB.sh
 ./copyPWNLIB.sh
 cd ../
 ```
@@ -23,7 +22,6 @@ cd ../
 ## use CryptoLib
 ```
 cd MyCTFLib
-chmod +x copyCRYPTOLIB.sh
 ./copyCRYPTOLIB.sh
 cd ../
 ```
