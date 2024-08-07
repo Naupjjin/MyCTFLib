@@ -26,6 +26,13 @@ cd MyCTFLib
 cd ../
 ```
 
+## use WebLib
+```
+cd MyCTFLib
+./copyWEBLIB.sh
+cd ../
+```
+
 ## lib intro
 ```
 
