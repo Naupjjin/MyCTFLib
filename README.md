@@ -28,16 +28,5 @@ cd ../
 
 ## lib intro
 ```
-MyCTFLib/
-├── copyPWNLIB.sh
-├── init.sh
-├── MyCryptoLib
-│   ├── exploit.py
-│   ├── NAUP_crypto_lib.py
-│   └── wiener.py
-├── MyPwnLib
-│   ├── exploit.py
-│   ├── NAUP_pwn_lib.py
-│   └── NAUP_shellcode_lib.py
-└── README.md
+
 ```
