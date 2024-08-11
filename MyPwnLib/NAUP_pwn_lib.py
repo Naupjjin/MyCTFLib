@@ -1,10 +1,24 @@
 from pwn import *
 
 def debug_init():
-    a=input('open debug?(y/n)')
+    a=input('open debug?(y/n/srop)')
     if a=='y':
         context.log_level = 'debug'
         context.terminal = ['tmux', 'splitw', '-h']
+    elif a=='srop':
+        context.log_level = 'debug'
+        context.arch = 'amd64'
+        context.os = 'linux'
+        context.terminal = ['tmux', 'splitw', '-h', '-F' '#{pane_pid}', '-P']
+
+def p(r):
+    gdb.attach(r)
+
+def p_c(r,cmd):
+    gdb.attach(r,cmd)
+
+def srop_p(r):
+    gdb.attach(proc.pidof(r)[0])
 
 def NAUPINFO(item,data):
     print("NAUPINFO @ ",item,": ",data)
