@@ -19,7 +19,7 @@ def srop_p(r):
     gdb.attach(proc.pidof(r)[0])
 
 def NAUPINFO(item,data):
-    print("NAUPINFO @ ",item,": ",data)
+    print("NAUPINFO @ {}: {}".format(item,data))
 
 def num2byte_64(num):
     return p64(num)
