@@ -7,8 +7,6 @@ def debug_init():
         context.terminal = ['tmux', 'splitw', '-h']
     elif a=='srop':
         context.log_level = 'debug'
-        context.arch = 'amd64'
-        context.os = 'linux'
         context.terminal = ['tmux', 'splitw', '-h', '-F' '#{pane_pid}', '-P']
 
 def p(r):
