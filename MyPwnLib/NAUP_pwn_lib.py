@@ -53,3 +53,6 @@ def shellcode_gen(asm_list):
 def split_nc(nc_str):
     nc_str=nc_str.split(" ")
     return [nc_str[1],nc_str[2]]
+
+def chunk_decrypt(pos,fd):
+    return fd ^ (pos >> 12)
