@@ -52,5 +52,5 @@ class FMT_obj:
 
         return self.fmt_num_list
 
-    def gen_fmt(list_addr, list_place):
+    def gen_fmt_payload(list_addr, list_place):
         pass
