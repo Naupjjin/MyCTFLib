@@ -1,5 +1,11 @@
 from pwn import *
 
+def x64_env():
+    context(arch = 'amd64', os = 'linux')
+
+def x86_env():
+    context(os='linux', arch='i386')
+
 def debug_init():
     a=input('open debug?(y/n/srop)')
     if a=='y':
