@@ -62,3 +62,4 @@ def split_nc(nc_str):
 
 def chunk_decrypt(pos,fd):
     return fd ^ (pos >> 12)
+
