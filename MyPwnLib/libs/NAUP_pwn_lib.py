@@ -6,6 +6,9 @@ def x64_env():
 def x86_env():
     context(os='linux', arch='i386')
 
+def WindowsNewlineSet(r):
+    r.newline = b"\r\n"
+
 def debug_init():
     a=input('open debug?(y/n/srop)')
     if a=='y':
