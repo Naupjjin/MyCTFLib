@@ -10,5 +10,3 @@ def PAtoVA_4page_cal(address):
     print("PD_offset: ",hex(PD_offset))
     print("PT_offset: ",hex(PT_offset))
     print("PhysicalAddress_offset: ",hex(PhysicalAddress_offset))
-
-
