@@ -1,10 +1,10 @@
 # MyPwnLib
 > Author: 堇姬Naup
 
-## 描述
-CTF模板，包含Pwn跟Crypto
+## Description
+My CTF Templates !
 
-## 下載
+## Usage
 ```
 git clone https://github.com/Naupjjin/MyCTFLib.git
 cd MyCTFLib
