@@ -9,4 +9,3 @@ import angelheap
 angelheap.init_angelheap()
 end
 end
-source /home/naup/pwndbg/gdbinit.py
