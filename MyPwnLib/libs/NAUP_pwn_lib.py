@@ -30,18 +30,6 @@ def srop_p(r):
 def NAUPINFO(item,data):
     print("NAUPINFO @ {}: {}".format(item,data))
 
-def num2byte_64(num):
-    return p64(num)
-
-def num2byte_32(num):
-    return p32(num)
-
-def byte2hex_64(num):
-    return hex(u64(num))
-
-def byte2hex_32(num):
-    return hex(u32(num))
-
 def gen_circle(num):
     result = ""
     for i in range(num):
