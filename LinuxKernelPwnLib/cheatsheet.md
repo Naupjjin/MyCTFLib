@@ -7,6 +7,7 @@ mkdir -p sysfile
 mv ./initramfs.cpio ./initramfs.cpio.gz
 gunzip initramfs.cpio.gz
 cpio -idmv -D sysfile < initramfs.cpio
+find . | cpio -o -H newc --owner root:root > ../new_initramfs.cpio
 ```
 
 ```sh
