@@ -1,5 +1,7 @@
 import socket
 
+# -monitor unix:/tmp/qemu-monitor.sock,server,nowait
+
 class QemuMonitorCommand(GenericCommand):
     """
 	Send a command to QEMU monitor via UNIX socket.
