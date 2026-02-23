@@ -20,7 +20,8 @@ find . | cpio -o --format=newc > ../initramfs.cpio
 mkdir initramfs
 cd initramfs
 cpio -idmv < ../initramfs.cpio
-find . -print0 | cpio --null -ov --format=newc > ../initramfs_new.cpio
+find . -print0 | cpio --null -ov --format=newc > ../initramfs.cpio
+sudo sh -c 'find . -print0 | cpio --null -ov --format=newc > ../initramfs.cpio'
 ```
 
 ```sh
