@@ -16,6 +16,11 @@ setsid /bin/cttyhack setuidgid 0 /bin/sh
 
 ```sh
 find . | cpio -o --format=newc > ../initramfs.cpio
+
+mkdir initramfs
+cd initramfs
+cpio -idmv < ../initramfs.cpio
+find . -print0 | cpio --null -ov --format=newc > ../initramfs_new.cpio
 ```
 
 ```sh
