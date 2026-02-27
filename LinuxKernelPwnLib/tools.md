@@ -10,3 +10,5 @@ https://github.com/marin-m/vmlinux-to-elf
 ## IDA kallsyms
 https://github.com/mephi42/ida-kallsyms
 
+## ropr
+https://github.com/Ben-Lichtman/ropr
